@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e6e6;
+}
+
+.navbar {
+    height: 65px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location small,
+.account small,
+.orders small {
+    color: #ddd;
+}
+
+.search {
+    height: 40px;
+    flex: 1;
+    display: flex;
+}
+
+.search select {
+    width: 55px;
+    border: none;
+    background-color: #eee;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search button {
+    width: 50px;
+    border: none;
+    background-color: #febd69;
+    font-size: 18px;
+}
+
+.language,
+.account,
+.orders {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.cart {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.subnav {
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.hero {
+    height: 350px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.1),
+        rgba(227,230,230,1)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 12px 30px;
+    border: none;
+    background-color: #ff9900;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: -50px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    min-height: 320px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.product-image {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: #f3f3f3;
+}
+
+.card p {
+    margin: 15px 0;
+}
+
+.card a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.back {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37475a;
+    color: white;
+}
+
+.footer-content {
+    background-color: #232f3e;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 10%;
+    gap: 40px;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    color: #ddd;
+}
+
+.copyright {
+    background-color: #131a22;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+    }
+
+    .search {
+        order: 2;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .subnav {
+        overflow-x: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
