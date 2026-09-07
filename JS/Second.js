@@ -100,6 +100,11 @@
 //     console.log("F");
 // }
 
-const a = 10;
-// a = 20; // This will cause an error because const variables cannot be reassigned
+// const a = 10;
+// // a = 20; // This will cause an error because const variables cannot be reassigned
+// console.log(a)
+
+let a = 20;
+a = 30;
+
 console.log(a);
